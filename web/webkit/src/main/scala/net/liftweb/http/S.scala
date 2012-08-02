@@ -2021,13 +2021,13 @@ for {
      * Returns the unprefixed attribute value as an Option[NodeSeq]
      * for easy addition to the attributes
      */
-    def ~(key: String): Option[NodeSeq] = apply(key).toOption.map(Text)
+    def ~(key: String): Option[NodeSeq] = apply(key).toOption.map(Text(_))
 
     /**
      * Returns the prefixed attribute value as an Option[NodeSeq]
      * for easy addition to the attributes
      */
-    def ~(prefix: String, key: String): Option[NodeSeq] = apply(prefix, key).toOption.map(Text)
+    def ~(prefix: String, key: String): Option[NodeSeq] = apply(prefix, key).toOption.map(Text(_))
   }
 
   /**
@@ -2146,13 +2146,13 @@ for {
      * Returns the unprefixed attribute value as an Option[NodeSeq]
      * for easy addition to the attributes
      */
-    def ~(key: String): Option[NodeSeq] = apply(key).toOption.map(Text)
+    def ~(key: String): Option[NodeSeq] = apply(key).toOption.map(Text(_))
 
     /**
      * Returns the prefixed attribute value as an Option[NodeSeq]
      * for easy addition to the attributes
      */
-    def ~(prefix: String, key: String): Option[NodeSeq] = apply(prefix, key).toOption.map(Text)
+    def ~(prefix: String, key: String): Option[NodeSeq] = apply(prefix, key).toOption.map(Text(_))
   }
 
   /**
